@@ -1,0 +1,43 @@
+refrain-tech.github.io
++-- 404.css           : 404ページのCSS
++-- 404.html          : 404ページのHTML
++-- 404.js            : 404ページのJS
++-- index.html        : トップページのHTML
++-- script.js         : トップページのJS
++-- style.css         : トップページのCSS
++-- application/      : 公開したアプリのページ
+|   +-- index.html    : ページのHTML
+|   +-- script.js     : ページのJS
+|   +-- style.css     : ページのCSS
++-- article/          : 公開した記事のページ
+|   +-- index.html    : ページのHTML
+|   +-- script.js     : ページのJS
+|   +-- style.css     : ページのCSS
++-- other/            : 未分類のページ
+|   +-- index.html    : ページのHTML
+|   +-- script.js     : ページのJS
+|   +-- style.css     : ページのCSS
++-- res/              : リソースの一括管理用階層
+|   +-- favicon.png   : ページのアイコン
+|   +-- github.png    : GitHubのアイコン
+|   +-- header.png    : ヘッダーの画像
+|   +-- mewe.png      : MeWeのアイコン
+|   +-- pixiv.png     : Pixivのアイコン
+|   +-- common.css    : 共通のCSS
+|   +-- twitter.png   : Twitterのアイコン
++-- search/           : 検索のページ(?keyword=TARGET_KEYWORD)
+|   +-- index.html    : ページのHTML
+|   +-- script.js     : ページのJS
+|   +-- style.css     : ページのCSS
++-- service/          : 公開したサービスのページ
+    +-- index.html    : ページのHTML
+    +-- script.js     : ページのJS
+    +-- style.css     : ページのCSS
+
+Firebase Database/
++-- article           : 公開した記事のデータ
+    +-- UPLOAD_DATE   : 公開した日付
+        +-- category  : 記事のカテゴリー
+        +-- image     : 記事の画像(4 x 3)
+        +-- title     : 記事のタイトル
+        +-- url       : 記事のURL
