@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang = "ja">
+	<head>
+		<meta charset = "utf-8" />
+	</head>
+	<body>
+		<!--
+		 4,802
+		-  334
+		 3,468
+		-->
+		<canvas height = "818" id = "canvas" width = "4468"></canvas>
+		<canvas height = "180" id = "dest" width = "1600"></canvas>
+		<script>
+		const canvas = document.querySelector("#canvas");
+		const context = canvas.getContext("2d");
+		context.font = "1000px 'Ink Free'";
+		context.fillStyle = "black";
+		context.fillText("REFRAIN", 166, 690);
+		const dest = document.querySelector("#dest");
+		const dcontext = dest.getContext("2d");
+		dcontext.drawImage(canvas, 300, 0, 1000, 180);
+		</script>
+	</body>
+</html>
