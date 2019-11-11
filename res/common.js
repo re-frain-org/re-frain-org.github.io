@@ -16,28 +16,22 @@ Element.prototype.prependChild = function(element) {
  * @property string url
  */
 function createListItem({category = "other", image = "", title = "", url = ""}) {
-	const W1JhWxuv = document.createElement("article");
-	W1JhWxuv.setAttribute("class", "W1JhWxuv");
-	const TVOxHpZ9 = document.createElement("a");
+	const UsfrU8B3 = document.querySelector("#UsfrU8B3");
+	const content = UsfrU8B3.content;
+	const TVOxHpZ9 = content.querySelector(".TVOxHpZ9");
+	const eFcynxxU = content.querySelector(".eFcynxxU");
+	const WaWu7Va9 = content.querySelector(".WaWu7Va9");
+	TVOxHpZ9.category = category;
 	TVOxHpZ9.href = url;
-	TVOxHpZ9.setAttribute("category", "other");
-	TVOxHpZ9.setAttribute("class", "TVOxHpZ9");
-	const eFcynxxU = document.createElement("h1");
 	eFcynxxU.textContent = title;
-	eFcynxxU.setAttribute("class", "eFcynxxU");
-	const WaWu7Va9 = document.createElement("img");
 	WaWu7Va9.src = image;
-	WaWu7Va9.setAttribute("class", "WaWu7Va9");
-	TVOxHpZ9.appendChild(eFcynxxU);
-	TVOxHpZ9.appendChild(WaWu7Va9);
-	W1JhWxuv.appendChild(TVOxHpZ9);
-	c6JO6k62.prependChild(W1JhWxuv);
+	c6JO6k62.prependChild(document.importNode(content, true));
 }
 /**
- * @function parseQuery
+ * @function parseParameter
  * @return {string: string}
  */
-function parseQuery() {
+function parseParameter() {
 	const parameter = {};
 	location.search.slice(1).split("&").forEach(query => {
 		const [key, value = ""] = query.split("=");
